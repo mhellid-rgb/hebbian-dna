@@ -1,0 +1,142 @@
+/*
+  @hebbian/dna — DNA layer (L0)
+  Surface scale, neutral theme tokens, spacing, radii, type scale, motion.
+  Light = :root; dark = :root.dark on <html>.
+  Semver: DNA value change = minor; removed/renamed token = major.
+*/
+
+:root {
+  color-scheme: light;
+
+  /* Surface scale */
+  --surface-void: #f4f4f5;
+  --surface-raised: #ffffff;
+
+  /* Neutral theme (light / Hebbian Daylight) */
+  --background: var(--surface-void);
+  --foreground: #111827;
+
+  --card: var(--surface-raised);
+  --card-foreground: #111827;
+  --popover: var(--surface-raised);
+  --popover-foreground: #111827;
+
+  --secondary: #e4e4e7;
+  --secondary-foreground: #111827;
+
+  --muted: #e4e4e7;
+  --muted-foreground: #52525b;
+
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+
+  --border: #d4d4d8;
+  --input: #d4d4d8;
+
+  --chart-1: #f3c623;
+  --chart-2: #c2410c;
+  --chart-3: #52525b;
+  --chart-4: #111827;
+  --chart-5: #a1a1aa;
+
+  --radius: 0.25rem;
+
+  --sidebar: #ececee;
+  --sidebar-foreground: #0a0a0a;
+  --sidebar-primary: #f3c623;
+  --sidebar-primary-foreground: #0a0a0b;
+  --sidebar-accent: #e4e4e7;
+  --sidebar-accent-foreground: #0a0a0a;
+  --sidebar-border: #d4d4d8;
+  --sidebar-ring: #f3c623;
+
+  /* Spacing scale (4px base) */
+  --sp-0: 0;
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.25rem;
+  --sp-6: 1.5rem;
+  --sp-8: 2rem;
+  --sp-10: 2.5rem;
+  --sp-12: 3rem;
+  --sp-16: 4rem;
+
+  /* Radii derived from --radius */
+  --r-sm: calc(var(--radius) * 0.6);
+  --r-md: calc(var(--radius) * 0.8);
+  --r-lg: var(--radius);
+  --r-xl: calc(var(--radius) * 1.4);
+  --r-2xl: calc(var(--radius) * 1.8);
+
+  /* Type scale */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+
+  --leading-tight: 1.25;
+  --leading-snug: 1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+
+  --tracking-tight: -0.025em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.025em;
+  --tracking-wider: 0.05em;
+  --tracking-widest: 0.1em;
+
+  /* Motion */
+  --dur-fast: 120ms;
+  --dur-normal: 200ms;
+  --dur-slow: 320ms;
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-emphasized: cubic-bezier(0.2, 0, 0, 1);
+}
+
+:root.dark {
+  color-scheme: dark;
+
+  --surface-void: #10141c;
+  --surface-raised: #151a24;
+
+  --background: var(--surface-void);
+  --foreground: #f8f9fa;
+
+  --card: var(--surface-raised);
+  --card-foreground: #f8f9fa;
+  --popover: var(--surface-raised);
+  --popover-foreground: #f8f9fa;
+
+  --secondary: var(--surface-raised);
+  --secondary-foreground: #f8f9fa;
+
+  --muted: #242424;
+  --muted-foreground: #a1a1aa;
+
+  --destructive: #ef4444;
+  --destructive-foreground: #0a0a0b;
+
+  --border: #2b2b2b;
+  --input: #434343;
+
+  --chart-1: #f3c623;
+  --chart-2: #ff4d00;
+  --chart-3: #a1a1aa;
+  --chart-4: #f8f9fa;
+  --chart-5: #1a1a1a;
+
+  --sidebar: #0a0a0b;
+  --sidebar-foreground: #f8f9fa;
+  --sidebar-primary: #f3c623;
+  --sidebar-primary-foreground: #0a0a0b;
+  --sidebar-accent: #1a1a1a;
+  --sidebar-accent-foreground: #f8f9fa;
+  --sidebar-border: #1a1a1a;
+  --sidebar-ring: #f3c623;
+}

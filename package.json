@@ -1,0 +1,53 @@
+{
+  "name": "@hebbian/dna",
+  "version": "0.1.0",
+  "description": "Hebbian DNA layer — surface scale, neutral tokens, brand roots, proxy helpers, and contract checks.",
+  "license": "UNLICENSED",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhellid-rgb/hebbian-dna.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "files": [
+    "dist",
+    "checks",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./dna.css": "./dist/dna.css",
+    "./brands.css": "./dist/brands.css",
+    "./e2e/token-contract": {
+      "types": "./dist/e2e/token-contract.d.ts",
+      "import": "./dist/e2e/token-contract.js"
+    }
+  },
+  "bin": {
+    "hebbian-dna-check-marketing-colors": "./checks/check-marketing-arbitrary-colors.mjs",
+    "hebbian-dna-egress-audit": "./checks/egress-audit.mjs"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "prepublishOnly": "npm run build",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "peerDependencies": {
+    "@playwright/test": ">=1.40.0"
+  },
+  "peerDependenciesMeta": {
+    "@playwright/test": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^22.17.2",
+    "typescript": "^5.9.2"
+  }
+}

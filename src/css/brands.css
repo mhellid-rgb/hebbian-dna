@@ -1,0 +1,28 @@
+/*
+  @hebbian/dna — L1 brand roots (no product L2 namespace).
+  Set data-brand-root on <html> via proxy / layout.
+*/
+
+html[data-brand-root="hebbian"] {
+  --brand-primary: #f3c623;
+  --brand-primary-fg: #0a0a0b;
+  --brand-accent: #c2410c;
+  --brand-accent-fg: #ffffff;
+  --brand-ring: #f3c623;
+
+  --font-display: "Neue Regrade", var(--font-body), ui-sans-serif, system-ui;
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-mono);
+}
+
+html[data-brand-root="hs"] {
+  --brand-primary: #f3c623;
+  --brand-primary-fg: #0a0a0b;
+  --brand-accent: #ff4d00;
+  --brand-accent-fg: #0a0a0b;
+  --brand-ring: #f3c623;
+
+  --font-display: "Neue Regrade", var(--font-body), ui-sans-serif, system-ui;
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-mono);
+}
