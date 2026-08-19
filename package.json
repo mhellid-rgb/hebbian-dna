@@ -1,6 +1,6 @@
 {
   "name": "@hebbian/dna",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Hebbian DNA layer — surface scale, neutral tokens, brand roots, proxy helpers, and contract checks.",
   "license": "UNLICENSED",
   "type": "module",
@@ -20,13 +20,17 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
     },
     "./dna.css": "./dist/dna.css",
     "./brands.css": "./dist/brands.css",
     "./e2e/token-contract": {
       "types": "./dist/e2e/token-contract.d.ts",
-      "import": "./dist/e2e/token-contract.js"
+      "import": "./dist/e2e/token-contract.js",
+      "require": "./dist/e2e/token-contract.js",
+      "default": "./dist/e2e/token-contract.js"
     }
   },
   "bin": {
