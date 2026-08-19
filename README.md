@@ -63,3 +63,9 @@ defineTokenContractTest({
 |---|---|
 | DNA token value change | **minor** |
 | Removed or renamed token | **major** |
+
+## Verification discipline
+
+Before trusting green CI on DNA extractions or template repos, read [docs/verification-discipline.md](./docs/verification-discipline.md).
+
+Registry migration from git dependency → GitHub Packages: [docs/registry-setup.md](./docs/registry-setup.md).
