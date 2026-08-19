@@ -14,6 +14,7 @@
   "files": [
     "dist",
     "checks",
+    "bin",
     "README.md"
   ],
   "exports": {
@@ -29,8 +30,8 @@
     }
   },
   "bin": {
-    "hebbian-dna-check-marketing-colors": "./checks/check-marketing-arbitrary-colors.mjs",
-    "hebbian-dna-egress-audit": "./checks/egress-audit.mjs"
+    "hebbian-dna-check-marketing-colors": "bin/check-marketing-arbitrary-colors.mjs",
+    "hebbian-dna-egress-audit": "bin/egress-audit.mjs"
   },
   "scripts": {
     "build": "node scripts/build.mjs",
