@@ -1,6 +1,6 @@
 {
   "name": "@hebbian/dna",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Hebbian DNA layer — surface scale, neutral tokens, brand roots, proxy helpers, and contract checks.",
   "license": "UNLICENSED",
   "type": "module",

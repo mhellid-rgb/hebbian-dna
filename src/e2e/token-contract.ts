@@ -112,15 +112,15 @@ async function readComputedTokens(
 export function defineTokenContractTest(options: TokenContractOptions) {
   const l2TokenNames = options.l2TokenNames ?? [];
 
-  test.describe("DNA token contract", () => {
-    if (options.hostResolverRules) {
-      test.use({
-        launchOptions: {
-          args: [`--host-resolver-rules=${options.hostResolverRules}`],
-        },
-      });
-    }
+  if (options.hostResolverRules) {
+    test.use({
+      launchOptions: {
+        args: [`--host-resolver-rules=${options.hostResolverRules}`],
+      },
+    });
+  }
 
+  test.describe("DNA token contract", () => {
     test("table-driven brand/DNA tokens + genome injection guard", async ({ page }) => {
       const { brandVars, dnaNeutralVars } = extractTokenNamesFromCssFiles(options.cssPaths);
       const brandTokenNames = brandVars;
